@@ -1,3 +1,6 @@
+/*fonts*/
+/*colors*/
+/*general*/
 /*general*/
 * {
   font-family: "Open Sans", sans-serif;
@@ -13,6 +16,8 @@ body {
   align-content: center; }
 
 input:hover,
+button:focus,
+a:focus,
 input:focus,
 input {
   border: none;
@@ -44,7 +49,7 @@ input {
       color: #999; }
       .flex p a:last-child {
         text-decoration: none; }
-      .flex p a:hover {
+      .flex p a:focus, .flex p a:hover {
         color: #696969; }
   .flex .box {
     padding: 15px 0;
@@ -63,10 +68,14 @@ input {
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-        margin: 0; }
+        margin: 5px 0 5px 0;
+        color: #ccc;
+        transition: color 0.4s; }
+        .flex .box form label:focus-within {
+          color: #999; }
         .flex .box form label i {
           width: 20px;
-          color: #ccc;
+          color: inherit;
           font-size: 20px;
           position: absolute; }
         .flex .box form label input {
@@ -74,14 +83,19 @@ input {
           margin: auto;
           width: auto;
           padding: 10px 0 10px 20px;
-          border-bottom: #ccc solid 2px; }
+          border-bottom: #ccc solid 2px;
+          transition: border-color 0.4s; }
+          .flex .box form label input:focus {
+            border-color: #999; }
       .flex .box form button {
-        margin-top: 15px;
+        margin-top: 20px;
         background-color: #0096d2;
         border-radius: 15px;
         padding: 5px 20px;
         border: none;
         color: #fff; }
+        .flex .box form button:focus {
+          opacity: 0.8; }
     .flex .box .lostpassword i {
       font-size: 16px; }
     .flex .box .register,
@@ -90,6 +104,13 @@ input {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .box {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    width: 90%;
+    max-width: 280px;
+    padding: 20px; } }
+
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
