@@ -1,7 +1,6 @@
 /*fonts*/
 /*colors*/
 /*general*/
-/*general*/
 * {
   font-family: "Open Sans", sans-serif;
   padding: 0;
@@ -103,8 +102,7 @@ input {
   .flex .lostpassword {
     display: none; }
 
-/*==========  Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
+/*==========  Media Queries  ==========*/
 @media only screen and (min-width: 320px) {
   .flex {
     width: 90%;
@@ -116,16 +114,11 @@ input {
       .flex .box + p {
         margin-top: 15px; } }
 
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .flex {
     max-width: 280px; } }
 
-/* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   .box form button {
-    width: 35%;
+    width: auto;
     margin: 0 auto; } }
-
-/* Large Devices, Wide Screens */
