@@ -33,5 +33,6 @@ function chk(ctm_elements) {
   });
   if(i==0){
     $('.'+ctm_elements[0]).show();
+    $('.btn_'+ctm_elements[0]).hide();
   }
 }

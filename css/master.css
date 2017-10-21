@@ -41,7 +41,6 @@ input {
   flex-direction: column;
   align-self: center;
   padding: 0 5px;
-  /* especials */
   /* /especials */ }
   .flex p {
     display: flex;
@@ -54,7 +53,8 @@ input {
       .flex p a:focus, .flex p a:hover {
         color: #696969; }
   .flex .box {
-    padding: 15px 0; }
+    padding: 15px 0;
+    /* especials */ }
     .flex .box form {
       display: flex;
       flex-direction: column;
@@ -96,8 +96,8 @@ input {
         color: #fff; }
         .flex .box form button:focus {
           opacity: 0.8; }
-  .flex .lostpassword i {
-    font-size: 16px; }
+    .flex .box .lostpassword i {
+      font-size: 16px; }
   .flex a.btn_login,
   .flex .register,
   .flex .lostpassword {
