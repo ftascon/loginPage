@@ -131,9 +131,8 @@ input{
   /* /especials */
 }
 
-/*==========  Mobile First Method  ==========*/
+/*==========  Media Queries  ==========*/
 
-/* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
   .flex{
     width: 90%;
@@ -149,26 +148,15 @@ input{
   }
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-}
-
-/* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
   .flex{
     max-width: 280px;
   }
 }
 
-/* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
   .box form button{
-    width: 35%;
+    width: auto;
     margin: 0 auto;
   }
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
 }
