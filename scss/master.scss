@@ -117,16 +117,18 @@ input{
         }
       }
     }
-    /* especials */
-    .lostpassword i{
-      font-size: 16px;
-    }
-    .register,
-    .lostpassword {
-      display: none;
-    }
-    /* /especials */
   }
+  /* especials */
+  .lostpassword i{
+    font-size: 16px;
+  }
+
+  a.btn_login,
+  .register,
+  .lostpassword {
+    display: none;
+  }
+  /* /especials */
 }
 
 /*==========  Mobile First Method  ==========*/

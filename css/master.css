@@ -40,7 +40,9 @@ input {
   display: flex;
   flex-direction: column;
   align-self: center;
-  padding: 0 5px; }
+  padding: 0 5px;
+  /* especials */
+  /* /especials */ }
   .flex p {
     display: flex;
     justify-content: space-between;
@@ -52,9 +54,7 @@ input {
       .flex p a:focus, .flex p a:hover {
         color: #696969; }
   .flex .box {
-    padding: 15px 0;
-    /* especials */
-    /* /especials */ }
+    padding: 15px 0; }
     .flex .box form {
       display: flex;
       flex-direction: column;
@@ -96,11 +96,12 @@ input {
         color: #fff; }
         .flex .box form button:focus {
           opacity: 0.8; }
-    .flex .box .lostpassword i {
-      font-size: 16px; }
-    .flex .box .register,
-    .flex .box .lostpassword {
-      display: none; }
+  .flex .lostpassword i {
+    font-size: 16px; }
+  .flex a.btn_login,
+  .flex .register,
+  .flex .lostpassword {
+    display: none; }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */

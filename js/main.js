@@ -24,8 +24,10 @@ function chk(ctm_elements) {
   var i = 0;
   ctm_elements.map(function(ele){
     $('.'+ele).hide();
+    $('.btn_'+ele).show();
     if(window.location.hash==='#'+ele){
       $('.'+ele).show();
+      $('.btn_'+ele).hide();
       i++;
     }
   });
